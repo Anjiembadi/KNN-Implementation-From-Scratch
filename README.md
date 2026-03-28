@@ -1,6 +1,6 @@
 # 📊 K-Nearest Neighbors (KNN) From Scratch
 
-A Machine Learning project that implements the **K-Nearest Neighbors (KNN) algorithm from scratch using Python**, without relying on pre-built libraries like Scikit-learn.
+A Machine Learning project that implements the **K-Nearest Neighbors (KNN) algorithm from scratch using Python in a Jupyter Notebook**, without relying on pre-built libraries like Scikit-learn.
 
 This project demonstrates a complete ML pipeline for **distance calculation, neighbor selection, majority voting, and prediction**, helping understand the core working of KNN at a fundamental level.
 
@@ -12,7 +12,7 @@ This project demonstrates a complete ML pipeline for **distance calculation, nei
 * 📏 Euclidean distance-based similarity calculation  
 * 🔢 Manual neighbor selection logic  
 * 🎯 Classification using majority voting  
-* ⚡ Simple and efficient implementation  
+* ⚡ Step-by-step implementation in Jupyter Notebook  
 * 📊 Easy to understand and beginner-friendly  
 
 ---
@@ -21,18 +21,13 @@ This project demonstrates a complete ML pipeline for **distance calculation, nei
 
 * **Python**  
 * **NumPy** – Numerical computations  
-* **Pandas** – Data handling (optional)  
+* **Pandas** – Data handling  
+* **Jupyter Notebook** – Interactive development  
 * **Matplotlib** – Visualization (optional)  
 
 ---
 
-## 📸 Screenshots
 
-### 🔹 Output Visualization
-
-![Output](assets/screenshot.png)
-
----
 
 ## ⚙️ Installation & Setup
 
@@ -46,12 +41,19 @@ pip install -r requirements.txt
 
 ## ⚙️ Usage & Details
 
-### ▶️ Run the Script
-python knn.py  
+### ▶️ Run the Notebook
+jupyter notebook  
+
+Open the file:
+`knn_from_scratch.ipynb`
 
 ### 🧠 System Workflow
 
 - Load dataset  
+- Perform preprocessing:
+  - Apply **Ordinal Encoding** for categorical features  
+  - Apply **Robust Scaling** for numerical features  
+  - Combine transformations using **ColumnTransformer**  
 - Split data into training and testing sets  
 - For each test point:
   - Calculate distance from all training points  
@@ -61,13 +63,11 @@ python knn.py
 - Predict class label  
 - Evaluate model performance  
 
----
-
 ## 📂 Output
 
 - Predicted class labels  
-- Model accuracy (if evaluation included)  
-- Optional visualization of classification  
+- Model accuracy / evaluation metrics  
+- Notebook-based step-by-step outputs  
 
 ---
 
